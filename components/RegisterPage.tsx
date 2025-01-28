@@ -102,6 +102,13 @@ const RegisterPage = () => {
             <Button type="submit" className="w-full" disabled={loading}>
               {loading ? "Logging in..." : "Register"}
             </Button>
+            <Button className="flex flex-col items-center justify-center gap-1 p-3 text-white bg-blue-600 hover:bg-blue-700 rounded-lg">
+              <h3 className="text-sm font-medium">Already registered?</h3>
+              <a href="/login" className="text-sm font-semibold underline">
+                Login
+              </a>
+            </Button>
+
           </form>
         </CardContent>
       </Card>

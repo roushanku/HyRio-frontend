@@ -24,7 +24,7 @@ export const createJob = async (jobData: JobData) => {
     location: jobData.location,
   };
   const response = await axios.post(
-    "http://10.50.40.217:8000/api/job/createNewJob",
+    `${process.env.NEXT_PUBLIC_API_URL}/job/createNewJob`,
     body,
     {
       headers: {

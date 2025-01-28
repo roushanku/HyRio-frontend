@@ -3,7 +3,7 @@ import axios from "axios";
 export const login = async (email: string, password: string) => {
   try {
     const response = await axios.post(
-      "http://10.50.40.217:8000/api/auth/login",
+      `${process.env.NEXT_PUBLIC_API_URL}/auth/login`,
       {
         email,
         password,
